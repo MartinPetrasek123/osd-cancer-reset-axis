@@ -22,12 +22,21 @@ The manuscript does **not** claim that a universal cancer cure has been discover
 3. IMvigor210 immunotherapy response and survival validation.
 4. GSE78220 melanoma anti-PD-1 baseline validation.
 5. DepMap/PRISM/LINCS perturbational and dependency analyses.
-6. Public 10x Visium spatial proof-of-concept.
-7. Prospective organoid/PDX reset-rechallenge protocol.
+6. Locked comparator and negative-control benchmark against proliferation, EMT, hypoxia-only, TGF-beta/CAF-stromal and immune comparators.
+7. Single-cell compartmentation in GSE165897 HGSOC.
+8. Public multisample 10x Visium spatial proof-of-concept.
+9. TCGA module-label permutation control.
+10. Prospective organoid/PDX reset-rechallenge protocol.
 
 ## Reproducibility Philosophy
 
-Large raw datasets are not committed to this repository. Instead, the repository records public source names, scripts, result tables, locked module definitions, analysis outputs and workflow scaffolding.
+Large raw datasets are not committed to this repository. Instead, the repository records:
+
+- public source names and accession points;
+- scripts and result tables;
+- locked module definitions embedded in scripts/manuscript;
+- analysis outputs used in the manuscript;
+- workflow scaffolding for future containerized reproduction.
 
 This is intentional: TCGA, GTEx, DepMap, PRISM, GEO, 10x Genomics and IMvigor210 should be retrieved from their public or license-governed sources rather than redistributed here.
 
@@ -38,11 +47,17 @@ This is intentional: TCGA, GTEx, DepMap, PRISM, GEO, 10x Genomics and IMvigor210
 - `results/imvigor210_reset_validation_results.json`
 - `results/gse78220_baseline_reset_validation_results.json`
 - `results/visium_multisample_governance_validation_results.json`
+- `results/osd_locked_benchmark_controls_results.json`
+- `results/osd_remaining_validation_layers_results.json`
+- `scripts/osd_locked_benchmark_controls.py`
+- `scripts/osd_remaining_validation_layers.py`
+- `reports/osd_locked_benchmark_controls_report.md`
+- `reports/osd_remaining_validation_layers_report.md`
 - `reports/lab_replicable_reset_validation_protocol.md`
 
 ## Citation and DOI
 
-Before journal submission, this repository should be archived with Zenodo to mint a permanent DOI.
+Before journal submission, this repository should be archived with Zenodo to mint a permanent DOI. Add the DOI here once available:
 
 **Zenodo DOI:** pending
 
